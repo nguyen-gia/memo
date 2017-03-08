@@ -213,7 +213,7 @@ func (cfg *config) load() error {
 	}
 	cfg.Column = 20
 	cfg.SelectCmd = "peco"
-	cfg.GrepCmd = "grep -nHi ${PATTERN} ${FILES}"
+	cfg.GrepCmd = "grep -nH ${PATTERN} ${FILES}"
 	cfg.AssetsDir = "."
 	dir = filepath.Join(confDir, "plugins")
 	os.MkdirAll(dir, 0700)
